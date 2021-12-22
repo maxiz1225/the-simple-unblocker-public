@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+body {
+    text-align: center;
+    background-color: #323232;
+}
+
+input[name="url"] {
+    width: 50%;
+    height: 50px;
+    padding: 0px 5px;
+    color:  #323232;
+    font-family: "Roboto";
+    background: #232525;
+    font-size: 20px;
+    border-radius: 5px;
+    border-color: #323232;
+    border-width: 1px;
+    border: 1px solid white;
+    transition: all .2s ease-in-out;
+}
+
+input[type="Submit"] {
+    width: 4%;
+    height: 53px;
+    color: grey;
+    font-size: 20px;
+    border-radius: 5px;
+    background: #232525;
+    border: 1px solid white;
+    font-family: "Roboto";
+    border-color: white;
+    border-width: 1px;
+}
+
+.navbar a {
+    color: grey;
+    display: block;
+    float: right;
+    font-size: 17px;
+    padding: 12px 15px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border-width: 1px;
+    border: 1px solid white;
+    border-color: white;
+}
+
+.navbar i {
+    color: grey;
+    display: block;
+    float: left;
+    margin-left: 25px;
+    font-size: 30px;
+    padding: 12px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar i:hover {
+    cursor: pointer;
+}
+
+.navbar a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.link {
+    color: grey;
+}
