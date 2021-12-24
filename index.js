@@ -4,12 +4,14 @@ const {createServer} = require("http")
 
 const express = require("express")
 const Corrosion = require("corrosion")
+const blacklist = Corrosion.middleware.blacklist("accounts.google.com")
 
 const app = express()
 const corrosion = new Corrosion({
     codec: "xor",
     prefix: "/main/",
-    title: "THE - SIMPLE - UNBLOCKER"
+    title: "THE - SIMPLE - UNBLOCKER",
+    requestMiddleware: [blacklist]
 })
 
 // Public files (index.html, index.css, etc.) in public folder
