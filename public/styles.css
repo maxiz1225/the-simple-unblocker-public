@@ -72,3 +72,38 @@ input[type="Submit"] {
 .link {
     color: grey;
 }
+
+.back a {
+    color: grey;
+    display: block;
+    float: left;
+    font-size: 17px;
+    padding: 12px 15px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border-width: 1px;
+    border: 1px solid white;
+    border-color: white;
+}
+
+.back i {
+    color: grey;
+    display: block;
+    float: left;
+    margin-left: 25px;
+    font-size: 30px;
+    padding: 12px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.back i:hover {
+    cursor: pointer;
+}
+
+.back a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
