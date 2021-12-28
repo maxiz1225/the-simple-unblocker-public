@@ -1,7 +1,7 @@
 body {
-	background-color: black;
-	color: white;
-	font-family: sans-serif;
+	text-align: center;
+    background-color: #323232;
+	font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -10,7 +10,7 @@ body {
 
 .box {
 	margin: auto;
-	background-color: white;
+	background-color: black;
 	padding: 10px;
 	width: 400px;
 }
@@ -28,20 +28,23 @@ body {
 	outline: none;
 	width: 374px;
 	font-size: 16px;
-	border: 1px solid rgba(0, 0, 0, 0.3);
+	border: 1px solid white;
+	border-color: #323232;
 	padding: 12px;
 	margin-bottom: 10px;
-	transition: 0.2s ease;
+	transition: all .2s ease-in-out;
+	font-family: "Roboto";
+	background: #232525;
 }
 
 #gsearchbar:focus {
-	background-color: #eee;
+	background-color: grey;
 	box-shadow: inset 0 0 5px 1px rgba(0, 0, 0, 0.4);
 }
 
 #glist h2 {
 	display: block;
-	color: white;
+	color: grey;
 	font: 18px;
 	border: 1px solid #060606;
 	margin: -1px 0 0 0;
@@ -54,16 +57,51 @@ body {
 #glist a {
 	display: block;
 	text-decoration: inherit;
-	color: black;
+	color: grey;
 	font-size: 18px;
-	border: 1px solid #dddddd;
+	border: 1px solid #232525;
 	margin-top: -1px;
-	background-color: #f6f6f6;
+	background-color: #323232;
 	padding: 12px;
 	transition: 0.2s ease;
 }
 
 #glist a:hover {
-	background-color: #eeeeee;
+	background-color: grey;
 	text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.back a {
+    color: grey;
+    display: block;
+    float: left;
+    font-size: 17px;
+    padding: 12px 15px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border-width: 1px;
+    border: 1px solid white;
+    border-color: white;
+}
+
+.back i {
+    color: grey;
+    display: block;
+    float: left;
+    margin-left: 25px;
+    font-size: 30px;
+    padding: 12px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.back i:hover {
+    cursor: pointer;
+}
+
+.back a:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
