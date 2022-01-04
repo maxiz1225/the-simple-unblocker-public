@@ -19,6 +19,7 @@ app.use(express.static(join(__dirname, "public")))
 
 app.all("/main/*", (req, res) => {
     corrosion.request(req, res)
+    if(req.headers.useragent === 'googlebot') return res.writeHead(403).end('');
 })
 
 // Assumes SSL cert and key are in the proxy's directory
@@ -31,7 +32,7 @@ server.on("upgrade", (req, conn, head) => {
     corrosion.upgrade(req, conn, head)
 })
 
-let port = process.env.PORT || 8080;
+let port = process.env.PORT || 80;
 
 server.listen(port, () =>{
     console.log(`App is running at the port ${port}`);
