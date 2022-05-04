@@ -13,7 +13,7 @@ const corrosion = new Corrosion({
     title: "THE - SIMPLE - UNBLOCKER",
     requestMiddleware: [blacklist]
 })
-
+//simple unblocker Public Edtion
 // Public files (index.html, index.css, etc.) in public folder
 app.use(express.static(join(__dirname, "public")))
 
@@ -33,7 +33,7 @@ server.on("upgrade", (req, conn, head) => {
 })
 
 let port = process.env.PORT || 80;
-
+//simple unblocker Public Edtion
 server.listen(port, () =>{
     console.log(`App is running at the port ${port}`);
 });
