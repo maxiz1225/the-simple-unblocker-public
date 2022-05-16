@@ -3,7 +3,7 @@
 
 body {
     text-align: center;
-    background-color: #323232;
+    background-color: #2b2a33;
 }
 
 input[name="url"] {
@@ -11,30 +11,30 @@ input[name="url"] {
     height: 35px;
     padding: 10px 10px;
     color:  #000000;
-    font-family: "Roboto";
-    background: #232525;
+    font-family: 'Courier New', Courier, monospace;
+    background: #2b2a33;
     font-size: 15.55px;
     border-radius: 10px;
-    border-color: #323232;
+    border-color: #2b2a33;
     border-width: 1px;
-    border: 1px solid white;
+    border: 1px solid #7ee3fa;
     transition: all .5s ease-in-out;
 }
 input[name="url"]:focus {
-	background-color: rgb(255, 255, 255);
+	background-color: #7ee3fa;
 	box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 input[type="Submit"] {
     width: 5.5%;
     height: 56px;
-    color: rgb(255, 255, 255);
+    color: #7ee3fa;
     font-size: 18.5px;
     border-radius: 10px;
-    background: #232525;
-    border: 1px solid white;
-    font-family: "Roboto";
-    border-color: white;
+    background: #2b2a33;
+    border: 1px solid #7ee3fa;
+    font-family: 'Courier New', Courier, monospace;
+    border-color: #7ee3fa;
     border-width: 1px;
     transition: 0.5s;
 }
@@ -45,18 +45,18 @@ input[type="Submit"]:hover {
 }
 
 .navbar a {
-    color: rgb(255, 255, 255);
+    color: #7ee3fa;
     display: block;
     float: left;
     font-size: 15px;
     padding: 15px 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
     border-width: 1px;
     border: 1px solid;
-    border-color: rgb(255, 255, 255);
+    border-color: #7ee3fa;
     transition: 0.5s;
 }
 
@@ -64,6 +64,7 @@ input[type="Submit"]:hover {
     color: grey;
     display: block;
     float: left;
+    font-family: 'Courier New', Courier, monospace;
     margin-left: 25px;
     font-size: 30px;
     padding: 12px 15px;
@@ -83,26 +84,26 @@ input[type="Submit"]:hover {
 }
 
 .link {
-    color: rgb(224, 224, 224);
+    color: #7ee3fa;
 }
 
 .back a {
-    color: rgb(224, 224, 224);
+    color: #7ee3fa;
     display: block;
     float: left;
     font-size: 17px;
     padding: 12px 15px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
     border-width: 1px;
-    border: 1px solid white;
-    border-color: white;
+    border: 1px solid #7ee3fa;
+    border-color: #7ee3fa;
 }
 
 .back i {
-    color: rgb(255, 255, 255);
+    color: #7ee3fa;
     display: block;
     float: left;
     margin-left: 25px;

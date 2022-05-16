@@ -1,7 +1,7 @@
 body {
 	text-align: center;
-    background-color: #323232;
-	font-family: 'Roboto', sans-serif;
+    background-color: #2b2a33;
+	font-family: 'Courier New', Courier, monospace;
 }
 
 .container {
@@ -30,24 +30,24 @@ body {
 	width: 355px;
 	height: auto;
 	font-size: 15.5px;
-	border: 1px solid white;
+	border: 1px solid #7ee3fa;
 	border-radius: 25px;
-	border-color: #323232;
+	border-color: #2b2a33;
 	padding: 15px;
 	margin-bottom: 10px;
 	transition: all .5s ease-in-out;
 	font-family: "Roboto";
-	background: #232525;
+	background: #2b2a33;
 }
 
 #gsearchbar:focus {
-	background-color: rgb(255, 255, 255);
+	background-color: #7ee3fa;
 	box-shadow: inset 0 0 5px 1px rgba(0, 0, 0, 0.5);
 }
 
 #glist h2 {
 	display: block;
-	color: rgb(255, 255, 255);
+	color: #7ee3fa;
 	font: 20px;
 	border: 1px solid #060606;
 	border-radius: 10px 10px 0px 0px;
@@ -61,11 +61,11 @@ body {
 #glist a {
 	display: block;
 	text-decoration: inherit;
-	color: rgb(255, 255, 255);
+	color: #7ee3fa;
 	font-size: 15px;
-	border: 1px solid #232525;
+	border: 1px solid #2b2a33;
 	margin-top: -1px;
-	background-color: #151515;
+	background-color: #2b2a33;
 	padding: 15px;
 	transition: 0.5s ease;
 }
@@ -76,23 +76,23 @@ body {
 }
 
 .back a {
-    color: rgb(255, 255, 255);
+    color: #7ee3fa;
     display: block;
     float: left;
     font-size: 15px;
     padding: 15px 15px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
     border-width: 1px;
-    border: 1px solid white;
-    border-color: white;
+    border: 1px solid #7ee3fa;
+    border-color: #7ee3fa;
 	transition: 1s;
 }
 
 .back i {
-    color: rgb(255, 255, 255);
+    color: #7ee3fa;
     display: block;
     float: left;
     margin-left: 25px;
@@ -108,6 +108,6 @@ body {
 
 .back a:hover {
     cursor: pointer;
-	background-color: rgb(255, 255, 255);
+	background-color: #7ee3fa;
 	color: black;
 }

@@ -31,7 +31,7 @@ server.on("upgrade", (req, conn, head) => {
     corrosion.upgrade(req, conn, head)
     if(req.headers.useragent === 'googlebot') return res.writeHead(403).end('');
 })
-
+//how to enable SSL change the PORT to 443 or your prefered port and change the require=("http") to https
 let port = process.env.PORT || 80;
 //simple unblocker Public Edtion
 server.listen(port, () =>{
