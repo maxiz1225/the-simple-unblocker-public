@@ -10,13 +10,12 @@
             <a style="margin-left: 15px;" href="/credits.html">Credits</a>
             <a style="margin-left: 15px;" href="https://discord.gg/sNw4BzjRap">Community</a>
             <a style="margin-left: 15px;" href="/partners.html">Partners</a>
+            <a style="margin-left: 15px;" href="/TSU-Rammerhead.html">TSU Rammerhead Proxy</a>
         </div>
 <html>
     <title>The Simple Unblocker</title>
     <head>
-        		<!--
-			Simple Unblock Public Edition
-		        -->
+        <script async src="https://arc.io/widget.min.js#b25GjQDV"></script>
         <style>
             body {
                 text-align: center;
@@ -28,22 +27,25 @@
                 color: #7ee3fa;
             color: #2b2a33;
             }
+
         </style>
     </head>
     <body>
         <br><br><br><br>
         <h4 style="line-height:5%;">The Simple Unblocker</h4>
-        <form action="/main/gateway/" method="POST">
-            <input name="url" placeholder="Search the web">
-            <input type="submit" value="Go">
-        </form>
-        <h6 style="line-height:5%;">Backend Proxy - Corrosion</h6>
-        <h6 style="line-height:1px">known issues: any .google.com domain does not work atm</h6>
+        <input id="input" name="url" placeholder="Search the web">
+        <button id="submit" onclick="getProxy()">Go</button>
+        <br>
+        <center>
+            <button id="ultraviolet" class="proxy" onclick="setProxy('ultraviolet')">Ultraviolet</button>
+            <button id="rhodium" class="proxy" onclick="setProxy('rhodium')">Rhodium</button>
+        </center>
+        <h6 style="line-height:5%;">Backend Proxy - Rhodium & Ultraviolet</h6>
         <h6 style="line-height:1px">add my discord or dm 696969#6969</h6>
+        <br><br><br><br>
+        <div style="text-align: left; font-size: 12px;" class="footer">THE - SIMPLE - UNBLOCKER - PUBLIC <a class="link" href="/terms-privacy.html">Terms &amp; Privacy</a> (This new design was made by Daza & Toot Noot and 696969) </div>
+        <script src="/uv/uv.bundle.js"></script>
+        <script src="/uv/uv.config.js"></script>
+        <script src="/index.js"></script>
     </body>
 </html>
-		<!--
-			Simple Unblock Public Edition
-		-->
-<br><br><br>
-<div style="text-align: left; font-size: 12px;" class="footer">THE - SIMPLE - UNBLOCKER - PUBLIC <a class="link" href="/terms-privacy.html">Terms &amp; Privacy</a> (This new design was made by Daza & Toot Noot and 696969) </div>

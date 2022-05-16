@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 
 body {
     text-align: center;
     background-color: #2b2a33;
 }
 
-input[name="url"] {
+#input {
     width: 50%;
     height: 35px;
     padding: 10px 10px;
@@ -20,13 +19,17 @@ input[name="url"] {
     border: 1px solid #7ee3fa;
     transition: all .5s ease-in-out;
 }
-input[name="url"]:focus {
+
+#input:focus {
 	background-color: #7ee3fa;
 	box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-input[type="Submit"] {
+#submit {
     width: 5.5%;
+}
+
+#submit, .proxy {
     height: 56px;
     color: #7ee3fa;
     font-size: 18.5px;
@@ -37,11 +40,18 @@ input[type="Submit"] {
     border-color: #7ee3fa;
     border-width: 1px;
     transition: 0.5s;
+    padding: 10px;
 }
 
-input[type="Submit"]:hover {
+#submit:hover, .proxy:hover {
     cursor: pointer;
     background: #000000;
+    color: #7ee3fa;
+}
+
+.selected {
+    background-color: #7ee3fa;
+    color: black;
 }
 
 .navbar a {
