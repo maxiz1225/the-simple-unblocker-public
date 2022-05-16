@@ -1,6 +1,6 @@
 import { readFileSync } from 'fs';
 import { join, dirname } from 'path';
-import { createServer } from 'https';
+import { createServer } from 'http';
 import { fileURLToPath } from 'url';
 import Proxy from './lib/main/bundle.js';
 import Server from 'bare-server-node';
@@ -43,7 +43,7 @@ server.on("upgrade", (req, socket, head) => {
     socket.end();
 })
 //how to enable SSL change the PORT to 443 or your prefered port and change the  { createServer } from 'http' to https
-let port = process.env.PORT || 443;
+let port = process.env.PORT || 80;
 server.listen(port, () =>{
     console.log(`App is running at the port ${port}`);
 });
