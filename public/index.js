@@ -6,7 +6,6 @@ const rhodium = document.getElementById('rhodium');
 
 window.addEventListener('load', () => {
     const currentproxy = localStorage.getItem('proxy');
-
     if (currentproxy !== null) {
         document.getElementById(currentproxy).classList.add('selected');
     }
@@ -15,24 +14,24 @@ window.addEventListener('load', () => {
 input.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
         let url = input.value.trim();
-        if (!isUrlVal()) {
-            getProxy();
-        } else if (!(url.startsWith('https://') || url.startsWith('http://'))) {
-            url = 'http://' + url;
-            getProxy();
+        if (isUrlVal(url)) {
+            if (!(url.startsWith('http://') || url.startsWith('https://'))) {
+                url = 'http://' + url;
+            }
+            getProxy(url);
         }
     }
 });
 
-function getProxy(url = input.value) {
+function getProxy(url = '') {
     if (localStorage.getItem('proxy') === 'rhodium') {
-        window.location.href = `/rhodium/gateway?url=${url}`;
+        window.location.href =  `/rhodium/gateway?url=${url}`;
     } else if (localStorage.getItem('proxy') === 'ultraviolet') {
         window.navigator.serviceWorker.register('./sw.js', {
             scope: __uv$config.prefix
         }).then(() => {
-            window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
-        })
+            window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url)
+        })        
     }
 };
 function setProxy(proxy) {
@@ -45,6 +44,6 @@ function setProxy(proxy) {
         uv.classList.add('selected')
     }
 };
-function isUrlVal(url = input.value) {
-    return url.match(/^(https?:\/\/)?((([a-z\d-]+\.)*[a-z\d-]+\.[a-z]{2,}(:\d{1,5})?(\/\S*)?)|([\d]{1,3}\.[\d]{1,3}\.[\d]{1,3}\.[\d]{1,3}(:\d{1,5})?(\/\S*)?))$/);
+function isUrlVal(url) {
+    return /^(https?:\/\/)?((([a-z\d-]+\.)*[a-z\d-]+\.[a-z]{2,}(:\d{1,5})?(\/\S*)?)|([\d]{1,3}\.[\d]{1,3}\.[\d]{1,3}\.[\d]{1,3}(:\d{1,5})?(\/\S*)?))$/.test(url);
 };
