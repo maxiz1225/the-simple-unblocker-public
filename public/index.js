@@ -13,24 +13,20 @@ window.addEventListener('load', () => {
 
 input.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
-        let url = input.value.trim();
-        if (isUrlVal(url)) {
-            if (!(url.startsWith('http://') || url.startsWith('https://'))) {
-                url = 'http://' + url;
-            }
-            getProxy(url);
-        }
+        getProxy()
     }
 });
 
-function getProxy(url = '') {
+function getProxy(url = input.value.trim()) {
     if (localStorage.getItem('proxy') === 'rhodium') {
+        if (!isUrlVal(url)) url = 'http://' + url;
         window.location.href =  `/rhodium/gateway?url=${url}`;
     } else if (localStorage.getItem('proxy') === 'ultraviolet') {
         window.navigator.serviceWorker.register('./sw.js', {
             scope: __uv$config.prefix
         }).then(() => {
-            window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url)
+            if (!isUrlVal(url)) url = 'http://' + url;
+            window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
         })        
     }
 };
@@ -45,5 +41,5 @@ function setProxy(proxy) {
     }
 };
 function isUrlVal(url) {
-    return /^(https?:\/\/)?((([a-z\d-]+\.)*[a-z\d-]+\.[a-z]{2,}(:\d{1,5})?(\/\S*)?)|([\d]{1,3}\.[\d]{1,3}\.[\d]{1,3}\.[\d]{1,3}(:\d{1,5})?(\/\S*)?))$/.test(url);
+    return /https?:\/\//.test(url);
 };
