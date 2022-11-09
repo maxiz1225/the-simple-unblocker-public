@@ -102,6 +102,15 @@ body {
     text-decoration: none;
 }
 
+.link {
+    color: #7ee3fa;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+}
+
 .back i:hover {
     cursor: pointer;
 }
@@ -111,3 +120,4 @@ body {
 	background-color: #7ee3fa;
 	color: black;
 }
+
