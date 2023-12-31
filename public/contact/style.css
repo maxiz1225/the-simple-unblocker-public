@@ -1,0 +1,124 @@
+body {
+    background: rgb(43,43,43);
+    background: radial-gradient(circle, rgba(8,8,8,1) 0%, rgba(0,0,0,1) 100%);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.titleText {
+    position: fixed;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 22vh;
+    bottom: 0;
+    color: white;
+    font-size: 7.5vh;
+    font-family: 'Oswald', sans-serif;
+}
+
+.contactText {
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    margin: auto;
+    top: 45vh;
+    left: 0;
+    right: 0;
+    line-height: 1vh;
+    font-size: 3vh;
+}
+
+.indent {
+    padding-left: 3vh;
+}
+
+header {
+    position: absolute;
+    margin: auto;
+    right: 0;
+    margin-top: -5.5vh;
+    margin-right: 1vh;
+}
+
+button {
+    margin-top: -.4vh;
+    height: 4.4vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    border-color: rgb(182,151,245);
+    border-width: 0.3vh;
+    border-radius: 12.5px;
+    border-style: solid;
+    color: white;
+}
+
+header p {
+    position:fixed;
+    margin-top: 0.7vh;
+    right: 21vh;
+    font-size: 2vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tsuStuff {
+    position: fixed;
+    left: 0;
+    padding-left: 1vh;
+}
+
+.headerLine {
+    height: 0.4vh;
+    width: 100%;
+    margin-top: 7.5vh;
+    background: rgb(182,151,245);
+    background: linear-gradient(90deg, rgba(182,151,245,1) 0%, rgba(88,56,153,1) 70%);
+}
+
+.defaultButtons img {
+    height: 3.5vh;
+    filter: saturate(0);
+    transition-duration: 0.5s;
+}
+
+.defaultButtons img:hover {
+    filter: saturate(1);
+    display: inline-flex;
+}
+
+.defaultButtons p {
+    display: inline-flex;
+}
+
+@media only screen and (orientation:portrait) {
+    .webFormInput {
+        width: 40vh;
+        border-radius: 100px;
+    }
+
+    .webForm {
+        padding-top: 5vh;
+    }
+
+    .webSubmit {
+        height: 8vh;
+        width: 8vh;
+        border-radius: 100px;
+        margin-left: -8vh;
+    }
+}
+
+.colorHaha {
+    position: fixed;
+    height: 7.5vh;
+    width: 100%;
+    background-color: black;
+    margin-top: -7.5vh;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+}

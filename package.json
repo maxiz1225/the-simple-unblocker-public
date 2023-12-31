@@ -1,25 +1,27 @@
 {
-  "name": "proxy-test-1",
+  "name": "uv-app",
   "version": "1.0.0",
-  "description": "proxy-test-v1",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+  "description": "Ultraviolet instance",
+  "type": "module",
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=16.0.0"
   },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "proxy"
+  ],
   "author": "",
-  "license": "ISC",
+  "license": "GPL-3.0-or-later",
   "dependencies": {
-    "bare-server-node": "github:tomphttp/bare-server-node",
-    "corrosion": "^1.0.0",
-    "css": "^3.0.0",
-    "css-tree": "^2.1.0",
-    "express": "^4.17.2",
-    "jsdom": "^19.0.0",
-    "node-static": "^0.7.11",
-    "url": "^0.11.0",
-    "webpack": "^5.72.1",
-    "ws": "^8.6.0",
-    "wss": "^3.3.4"
+    "@titaniumnetwork-dev/ultraviolet": "^2.0.0",
+    "@tomphttp/bare-server-node": "^2.0.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "prettier": "^2.8.4"
   }
 }

@@ -1,54 +1,58 @@
-<!DOCTYPE html>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="/images/favicon.ico">
-    <main>
-        <div style="margin-right: 15px; margin-top: 15px;" class="navbar">
-            <a style="margin-left: 15px;" href="/gfiles-main/index.html">Games</a>
-            <a style="margin-left: 15px;" href="/settings.html">Settings</a>
-            <a style="margin-left: 15px;" href="/credits.html">Credits</a>
-            <a style="margin-left: 15px;" href="https://discord.gg/sNw4BzjRap">Community</a>
-            <a style="margin-left: 15px;" href="/partners.html">Partners</a>
-        </div>
+<!DOCTYPE HTML>
 <html>
-        <!--
-			Simple Unblocker Public
-		-->
-    <title>The Simple Unblocker</title>
     <head>
-        <style>
-            body {
-                text-align: center;
-                font-family: 'Courier New', Courier, monospace;
-                font-size: 200%;
-                color: #7ee3fa;
-            }
-            .test {
-                color: #7ee3fa;
-            color: #2b2a33;
-            }
-
-        </style>
+        <title>The Simple Unblocker</title>
+        <link rel="icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Oswald:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Oswald:wght@600&family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div class="colorHaha"></div>
+        <header>
+            <!--
+            The Simple Unblocker PUBLIC EDITION
+            -->
+            <div class="tsuStuff">
+                <a href="#"><button>Home</button></a>
+                <a href="https://discord.gg/sNw4BzjRap"><button>Community</button></a>
+                <a href="/contact/"><button>Contact</button></a>
+                <a href="/gfiles/"><button>Games</button></a>
+                <a href="/beta/"><button>BETA</button></a>
+            </div>
+           <!--- <div class="defaultButtons">
+                <p>Quick Links:</p>
+                <img src="../images/googleLogo.svg" alt="">
+                <img src="../images/discordLogo.svg" alt="">
+                <img src="../images/tiktoklogo.svg" alt="">
+                <img src="../images/twitterLogo.svg" alt="">
+                <img src="../images/youtubeLogo.svg" alt="">               
+            </div> -->
+        </header>
         <!--
-			Simple Unblocker Public
-		-->
-        <br><br><br><br>
-        <h4 style="line-height:5%;">The Simple Unblocker</h4>
-        <input id="input" name="url" placeholder="Search the web">
-        <button id="submit" onclick="getProxy()">Go</button>
-        <br>
+            The Simple Unblocker PUBLIC EDITION
+        -->
+        <div style="margin-top: 2vh;"></div>
+        <div class="headerLine"></div>
         <center>
-            <button id="ultraviolet" class="proxy" onclick="setProxy('ultraviolet')">Ultraviolet</button>
-            <button id="rhodium" class="proxy" onclick="setProxy('rhodium')">Rhodium</button>
+            <h1 class="titleText">The Simple Unblocker</h1>
+            <form id="uv-form" id="uform" class="webForm" style="text-align: center;" >
+                <input
+                  id="uv-search-engine"
+                  value="https://www.google.com/search?q=%s"
+                  type="hidden"
+                />
+                <input id="uv-address" class="webFormInput" type="text" placeholder="Search the web freely" />
+              </form>
         </center>
-        <h6 style="line-height:5%;">Backend Proxy - Rhodium & Ultraviolet</h6>
-        <h6 style="line-height:1px">add my discord or dm 696969#6969</h6>
-        <div style="text-align: left; font-size: 12px;" class="footer">THE - SIMPLE - UNBLOCKER - PUBLIC <a class="link" href="/terms-privacy.html">Terms &amp; Privacy</a> (This new design was made by Daza & Toot Noot and 696969) </div>
-        <script src="/uv/uv.bundle.js"></script>
-        <script src="/uv/uv.config.js"></script>
-        <script src="/index.js"></script>
+        <script src="uv/uv.bundle.js" defer></script>
+        <script src="uv/uv.config.js" defer></script>
+        <script src="register-sw.js" defer></script>
+        <script src="search.js" defer></script>
+        <script src="index.js" defer></script>
+        <script type="application/ld+json"></script>
+        <div style="text-align: left; font-size: 12px;" class="footer">TSU BETA made by 696969 & TootNoot PUBLIC EDITION</div>
     </body>
 </html>

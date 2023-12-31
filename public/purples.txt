@@ -1,0 +1,3 @@
+#b697f5 light
+#9062ed medium
+#b697f5 dark
