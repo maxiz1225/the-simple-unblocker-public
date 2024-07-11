@@ -1,5 +1,5 @@
 body {
-	background: rgb(43,43,43);
+    background: rgb(43,43,43);
     background: radial-gradient(circle, rgba(8,8,8,1) 0%, rgba(0,0,0,1) 100%);
     height: 100%;
     margin: 0;
@@ -8,118 +8,193 @@ body {
     color: white;
 }
 
+.titleText {
+    position: fixed;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 22vh;
+    bottom: 0;
+    color: white;
+    font-size: 7.5vh;
+    font-family: 'Oswald', sans-serif;
+}
+
+.contactText {
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    margin: auto;
+    top: 45vh;
+    left: 0;
+    right: 0;
+    line-height: 1vh;
+    font-size: 3vh;
+}
+
+.indent {
+    padding-left: 3vh;
+}
+
+header {
+    position: absolute;
+    margin: auto;
+    right: 0;
+    margin-top: -5.5vh;
+    margin-right: 1vh;
+}
+
+button {
+    margin-top: -.4vh;
+    height: 4.4vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    border-color: rgb(182,151,245);
+    border-width: 0.3vh;
+    border-radius: 12.5px;
+    border-style: solid;
+    color: white;
+}
+
+header p {
+    position:fixed;
+    margin-top: 0.7vh;
+    right: 21vh;
+    font-size: 2vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tsuStuff {
+    position: fixed;
+    left: 0;
+    padding-left: 1vh;
+}
+
+.headerLine {
+    height: 0.4vh;
+    width: 100%;
+    margin-top: 7.5vh;
+    background: rgb(182,151,245);
+    background: linear-gradient(90deg, rgba(182,151,245,1) 0%, rgba(88,56,153,1) 70%);
+}
+
+.defaultButtons img {
+    height: 3.5vh;
+    filter: saturate(0);
+    transition-duration: 0.5s;
+}
+
+.defaultButtons img:hover {
+    filter: saturate(1);
+    display: inline-flex;
+}
+
+.defaultButtons p {
+    display: inline-flex;
+}
+
+@media only screen and (orientation:portrait) {
+    .webFormInput {
+        width: 40vh;
+        border-radius: 100px;
+    }
+
+    .webForm {
+        padding-top: 5vh;
+    }
+
+    .webSubmit {
+        height: 8vh;
+        width: 8vh;
+        border-radius: 100px;
+        margin-left: -8vh;
+    }
+}
+
+.colorHaha {
+    position: fixed;
+    height: 7.5vh;
+    width: 100%;
+    background-color: black;
+    margin-top: -7.5vh;
+}
+
+.titleText {
+    margin-top: 10vh;
+    color: white;
+    font-size: 7.5vh;
+    font-family: 'Oswald', sans-serif;
+}
+
 .container {
-	padding: 20px;
+    padding: 20px;
+    text-align: center;
 }
 
 .box {
-	margin: auto;
-	background-color: black;
-	padding: 10px;
-	border-radius: 10px;
-	width: 400px;
+    margin: auto;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
 }
 
 #glist {
-	overflow-x: hidden;
-	overflow-y: scroll;
-	width: 400px;
-	height: 500px;
-	padding: 0;
-	text-align: center;
+    overflow-y: scroll;
+    height: 500px;
+    padding: 0;
+    text-align: center;
 }
 
 #gsearchbar {
-	outline: none;
-	width: 355px;
-	height: auto;
-	font-size: 15.5px;
-	border: 1px solid #7ee3fa;
-	border-radius: 25px;
-	border-color: #2b2a33;
-	padding: 15px;
-	margin-bottom: 10px;
-	transition: all .5s ease-in-out;
-	font-family: "Roboto";
-	background: rgb(43,43,43);
+    outline: none;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #2b2a33;
+    border-radius: 25px;
+    background: rgb(43,43,43);
+    color: white;
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
 }
 
 #gsearchbar:focus {
-	background-color: rgb(182,151,245);
-	box-shadow: inset 0 0 5px 1px rgba(0, 0, 0, 0.5);
+    background-color: rgb(182,151,245);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 #glist h2 {
-	display: block;
-	color: rgb(182,151,245);
-	font: 20px;
-	border: 1px solid #060606;
-	border-radius: 10px 10px 0px 0px;
-	margin: 5px 0 0 0;
-	background-color: #000000;
-	padding: 15px;
-	font-weight: bold;
-	user-select: none;
+    color: rgb(182,151,245);
+    background-color: #000;
+    padding: 15px;
+    margin: 5px 0;
+    border-radius: 10px;
+    border: 1px solid #060606;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #glist a {
-	display: block;
-	text-decoration: inherit;
-	color: rgb(182,151,245);
-	font-size: 15px;
-	border: 1px solid rgb(43,43,43);
-	margin-top: -1px;
-	background-color: rgb(43,43,43);
-	padding: 15px;
-	transition: 0.5s ease;
+    display: block;
+    text-decoration: none;
+    color: rgb(182,151,245);
+    font-size: 15px;
+    border: 1px solid rgb(43,43,43);
+    margin-top: -1px;
+    padding: 15px;
+    background-color: rgb(43,43,43);
+    transition: background-color 0.5s ease;
 }
 
 #glist a:hover {
-	background-color: grey;
-	text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-}
-
-.back a {
-    color: rgb(182,151,245);
-    display: block;
-    float: left;
-    font-size: 15px;
-    padding: 15px 15px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    border-width: 1px;
-    border: 1px solid rgb(182,151,245);
-    border-color: rgb(182,151,245);
-	transition: 1s;
-}
-
-.back i {
-    color: rgb(182,151,245);
-    display: block;
-    float: left;
-    margin-left: 25px;
-    font-size: 30px;
-    padding: 15px 15px;
-    text-align: center;
-    text-decoration: none;
-}
-
-.back i:hover {
-    cursor: pointer;
-}
-
-.back a:hover {
-    cursor: pointer;
-	background-color: rgb(182,151,245);
-	color: black;
-}
-
-.link {
-    color: rgb(182,151,245);
+    background-color: grey;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
 .footer {
     position: fixed;
     bottom: 0;
+    font-size: 12px;
+
 }
